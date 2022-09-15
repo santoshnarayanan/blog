@@ -7,8 +7,7 @@ const PostList = () => {
   const [posts, setPosts] = useState({});
 
   const fetchPosts = async () => {
-    //! pass request to query service - port no 4002
-    const res = await axios.get("http://localhost:4002/posts");
+    const res = await axios.get("http://posts.com/posts");
     setPosts(res.data);
   };
 
